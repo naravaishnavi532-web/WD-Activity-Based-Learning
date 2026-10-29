@@ -1,1 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #542b27;
+}
+header {
+    background-color: #fff1eb;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo h1 {
+    font-family: Georgia, serif;
+    color: #8f233d;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.logo p {
+    font-size: 12px;
+    text-align: center;
+    color: #a64b5e;
+}
+
+nav a {
+    text-decoration: none;
+    color: #542b27;
+    margin: 0 12px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #d63362;
+}
+.hero {
+    min-height: 250px;
+    padding: 35px 18%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffe0e0;
+    background-image:
+        radial-gradient(ellipse at 10% 20%, #ffc0cb 0%, transparent 35%),
+        radial-gradient(ellipse at 90% 80%, #f8b8c9 0%, transparent 35%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    margin-bottom: 12px;
+    color: #542b27;
+}
+
+.hero p {
+    margin-bottom: 22px;
+    line-height: 1.5;
+}
+
+.decoration {
+    font-size: 110px;
+    color: #e97d9b;
+    padding-right: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #bd365c;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.button:hover {
+    background-color: #8f233d;
+}
+.bakery {
+    padding: 25px 10%;
+    text-align: center;
+}
+
+.bakery h2,
+.contact h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+}
+
+.subtitle {
+    margin: 8px 0 20px;
+    color: #855d56;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 23%;
+    min-width: 180px;
+    background-color: #fffdf9;
+    border: 1px solid #f3dfd6;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 12px;
+    box-shadow: 0 3px 8px #e9d4ca;
+}
+
+.card img {
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin: 10px 5px 6px;
+}
+
+.card p {
+    font-size: 12px;
+    margin: 0 5px;
+    color: #755650;
+}
+
+.card .price {
+    color: #df315e;
+    font-size: 20px;
+}
+.custom {
+    margin: 0 10% 12px;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #ffe4e4;
+    border-radius: 12px;
+}
+
+.custom-image {
+    width: 30%;
+}
+
+.custom-image img {
+    width: 100%;
+    height: 145px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.custom-text {
+    flex: 1;
+}
+
+.custom-text h2 {
+    font-family: Georgia, serif;
+    color: #a52c4d;
+    margin-bottom: 8px;
+}
+
+.custom-text p {
+    margin-bottom: 8px;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+.cake-design {
+    font-size: 65px;
+    color: #d63362;
+    padding: 15px;
+}
+.offers {
+    margin: 10px 10%;
+    padding: 18px 5%;
+    background-color: #b73760;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.offers h2 {
+    font-family: Georgia, serif;
+}
+
+.offers p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.offer-button {
+    background-color: #fff0ee;
+    color: #bd365c;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-size: 14px;
+}
+.contact {
+    padding: 15px 10% 25px;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #a52c4d;
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.contact-details div {
+    flex: 1;
+    min-width: 150px;
+    border-right: 1px solid #e8c7c1;
+    padding: 5px 12px;
+}
+
+.contact-details h3 {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.contact-details p {
+    font-size: 12px;
+    color: #755650;
+}
+footer {
+    background-color: #542b2b;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 12px;
+}
+
+footer p {
+    margin: 5px;
+}
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .hero {
+        padding: 35px 8%;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .decoration {
+        font-size: 65px;
+    }
+
+    .card {
+        width: 45%;
+        min-width: 140px;
+    }
+
+    .custom {
+        flex-direction: column;
+        align-items: stretch;
+        margin: 10px 5%;
+    }
+
+    .custom-image {
+        width: 100%;
+    }
+
+    .cake-design {
+        display: none;
+    }
+
+    .offers {
+        margin: 10px 5%;
+    }
+
+    .contact-details {
+        flex-direction: column;
+    }
+
+    .contact-details div {
+        border-right: none;
+        border-bottom: 1px solid #e8c7c1;
+    }
+}
 
